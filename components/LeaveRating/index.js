@@ -1,6 +1,6 @@
 import { h, Component } from 'preact'
 
-import style from './style.scss'
+import style from './style.module.scss'
 
 class LeaveRating extends Component {
   state = {
