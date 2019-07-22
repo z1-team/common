@@ -1,5 +1,4 @@
 import { h } from 'preact'
-import { Link } from 'preact-router/match'
 import Icon from 'common/components/Icon'
 
 import style from './style.scss'
