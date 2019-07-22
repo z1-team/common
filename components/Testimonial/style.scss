@@ -108,29 +108,30 @@
 	}
 }
 
-:global {
-  i.fa-quote {
-    &-left, &-right {
-      color: #c2c2c2; font-size: 24px;
-      position: absolute;
+.quote {
+	&Left,
+	&Right {
+		color: #c2c2c2; font-size: 24px;
+		position: absolute;
 
-      @include respond-to(xs) {
-        font-size: 16px;
-      }
-    }
-    &-left {
-      left: 19px; top: 19px;
+		@include respond-to(xs) {
+			font-size: 16px;
+		}
+	}
 
-      @include respond-to(xs) {
-        left: 8px; top: 8px;
-      }
-    }
-    &-right {
-      right: 19px; bottom: 19px;
+	&Left {
+		left: 19px; top: 19px;
 
-      @include respond-to(xs) {
-        right: 8px; bottom: 8px;
-      }
-    }
-  }
+		@include respond-to(xs) {
+			left: 8px; top: 8px;
+		}
+	}
+
+	&Right {
+		right: 19px; bottom: 19px;
+
+		@include respond-to(xs) {
+			right: 8px; bottom: 8px;
+		}
+	}
 }

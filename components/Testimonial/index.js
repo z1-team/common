@@ -20,9 +20,9 @@ class Testi extends Component {
       <div class={`${style.testi} ${mixin ? mixin : ''}`}>
         {isLoggedIn && <a href="#" class={style.delete} onClick={this.handleDelete}><Icon icon="times" /></a>}
         <div>
-          <Icon icon="quote-left" />
+          <Icon icon="quote-left" class={style.quoteLeft} />
           <p>{text}</p>
-          <Icon icon="quote-right" />
+          <Icon icon="quote-right" class={style.quoteRight} />
         </div>
         <footer>
           <p>{user}</p>
