@@ -2,7 +2,7 @@ import { h, Component } from 'preact'
 import Masonry from 'react-masonry-component'
 
 import Testimonial from 'common/components/Testimonial'
-import LeaveTesti from 'common/components/LeaveTestimonial'
+import LeaveTestimonial from 'common/components/LeaveTestimonial'
 import StarRating from 'common/components/StarRating'
 import style from './style.scss'
 
