@@ -33,7 +33,7 @@ class ToTop extends Component{
     })
   }
 
-  render({isVisible}) {
+  render(props, {isVisible}) {
     return (
       <a href="#" className={`${style.toTop} ${isVisible ? style.active : ''}`} onClick={this.handleToTop}>
         <Icon icon="arrow-up-alt" />
