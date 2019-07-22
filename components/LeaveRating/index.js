@@ -1,6 +1,7 @@
 import { h, Component } from 'preact'
+import Icon from 'common/components/Icon'
 
-import style from './style.module.scss'
+import style from './style.scss'
 
 class LeaveRating extends Component {
   state = {
@@ -34,15 +35,15 @@ class LeaveRating extends Component {
     return isHover ? hover : rating
   }
 
-  render() {
+  render({class: mixin}) {
     const value = this.selectValue()
     return (
-      <ul class={`${style.leaveRate} rate-${value}`} onMouseLeave={this.handleLeave}>
-        <li class="if fa-star" data-value="1" onClick={this.handleClick} onMouseEnter={this.handleMove}></li>
-        <li class="if fa-star" data-value="2" onClick={this.handleClick} onMouseEnter={this.handleMove}></li>
-        <li class="if fa-star" data-value="3" onClick={this.handleClick} onMouseEnter={this.handleMove}></li>
-        <li class="if fa-star" data-value="4" onClick={this.handleClick} onMouseEnter={this.handleMove}></li>
-        <li class="if fa-star" data-value="5" onClick={this.handleClick} onMouseEnter={this.handleMove}></li>
+      <ul class={`${style.leaveRate} rate-${value} ${mixin ? mixin: ''}`} onMouseLeave={this.handleLeave}>
+        <li data-value="1" onClick={this.handleClick} onMouseEnter={this.handleMove}><Icon class={style.icon} icon="star" /></li>
+        <li data-value="2" onClick={this.handleClick} onMouseEnter={this.handleMove}><Icon class={style.icon} icon="star" /></li>
+        <li data-value="3" onClick={this.handleClick} onMouseEnter={this.handleMove}><Icon class={style.icon} icon="star" /></li>
+        <li data-value="4" onClick={this.handleClick} onMouseEnter={this.handleMove}><Icon class={style.icon} icon="star" /></li>
+        <li data-value="5" onClick={this.handleClick} onMouseEnter={this.handleMove}><Icon class={style.icon} icon="star" /></li>
       </ul>
     )
   }

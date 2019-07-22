@@ -1,0 +1,55 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+@keyframes headerGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:50% 50%}
+  100%{background-position:0% 50%}
+}
+
+.wrHeader {
+  padding: 15px 0; position: fixed; width: 100%; left: 0; top: 0; z-index: 30;
+  background: #804a98; background-image: linear-gradient(to right, #dd669b, #553d97); background-size: 150%; box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
+  animation: headerGradient 42s ease infinite;
+
+  @include respond-to(xs) {
+    padding: 10px 0;
+  }
+}
+
+.header {
+	display: flex; align-items: center; justify-content: space-between;
+
+  @include respond-to(xs) {
+    flex-direction: column;
+  }
+
+	.contacts {
+		display: flex; align-items: center;
+
+    @include respond-to(xs) {
+      margin-bottom: 10px;
+    }
+
+		.contactsLink, .contactsText {
+			color: #fff; font-size: 12px; line-height: 14px; font-family: $m-sb;
+		}
+
+		.contactsLink {
+			&:hover {
+				text-decoration: underline;
+			}
+
+			i {
+				margin-right: 5px;
+			}
+		}
+
+		.contactsText {
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+}

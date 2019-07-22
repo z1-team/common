@@ -1,0 +1,83 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.wrTestimonials {
+  padding: 100px 0 75px; min-height: calc(100vh - 122px); margin-bottom: 121px; position: relative; z-index: 2;
+  background: #fff; border-bottom: solid 1px #e8e8f3;
+}
+
+.testimonials {
+
+	.masonry {
+		margin: 0 -10px; display: flex; align-items: flex-start; flex-wrap: wrap;
+
+		@include respond-to(xs) {
+			margin: 0;
+		}
+	}
+
+	&.moderate {
+		display: flex; align-items: flex-start; justify-content: flex-start; flex-wrap: wrap;
+	}
+
+	& > h2 {
+		width: 100%; justify-content: center;
+	}
+
+	& > h3 {
+		color: #161616; font-size: 20px; font-family: $m-sb; line-height: 26px;
+		margin-bottom: 30px;
+	}
+
+	header {
+		display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;
+
+		@include respond-to(sm) {
+			flex-direction: column; align-items: flex-start;
+		}
+	}
+
+	h2 {
+		color: #232935; font-size: 24px; font-family: $m-sb; line-height: 28px;
+		display: flex; align-items: center;
+
+		@include respond-to(sm) {
+			order: 1; flex-direction: column; align-items: flex-start;
+		}
+		@include respond-to(xs) {
+			font-size: 20px;
+		}
+	}
+
+	.rating {
+		 margin-left: 15px; display: flex; align-items: center; flex-shrink: 0;
+
+		@include respond-to(sm) {
+			margin-left: 0; margin-top: 5px;
+		}
+
+		[class*="stars"] {
+			margin-right: 10px;
+		}
+
+		p, span {
+			color: #484848; font-size: 12px; font-family: $os-r; line-height: 18px;
+		}
+
+		p {
+			text-decoration: underline; margin-right: 4px;
+		}
+	}
+
+	figure {
+		max-height: 300px; max-width: 300px; margin-left: 15px;
+
+		@include respond-to(sm) {
+			order: 0; margin-bottom: 10px; margin-left: 0;
+		}
+
+		img {
+			max-width: 100%; max-height: 100%;
+		}
+	}
+}

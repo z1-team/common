@@ -1,0 +1,64 @@
+.if {
+  font-family: 'icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.if-check-circle:before {
+  content: "\e910";
+}
+.if-arrow-down:before {
+  content: "\e900";
+}
+.if-arrow-up:before {
+  content: "\e901";
+}
+.if-arrow-up-alt:before {
+  content: "\e902";
+}
+.if-calendar:before {
+  content: "\e903";
+}
+.if-credit-card:before {
+  content: "\e904";
+}
+.if-edit:before {
+  content: "\e905";
+}
+.if-gripfire:before {
+  content: "\e906";
+}
+.if-marker:before {
+  content: "\e907";
+}
+.if-money:before {
+  content: "\e908";
+}
+.if-percent:before {
+  content: "\e909";
+}
+.if-quote-left:before {
+  content: "\e90a";
+}
+.if-quote-right:before {
+  content: "\e90b";
+}
+.if-star:before {
+  content: "\e90c";
+}
+.if-times:before {
+  content: "\e90d";
+}
+.if-upload:before {
+  content: "\e90e";
+}
+.if-close:before {
+  content: "\e90f";
+}

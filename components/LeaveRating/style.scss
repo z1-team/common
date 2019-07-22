@@ -3,7 +3,6 @@
   cursor: pointer;
 
   li {
-    color: #e2e2e2;
     margin-right: 2px;
     cursor: pointer;
 
@@ -13,11 +12,16 @@
   }
 }
 
+.icon {
+  color: #e2e2e2;
+  pointer-events: none;
+}
+
 :global {
   @for $i1 from 1 through 5 {
     .rate-#{$i1} {
       @for $i2 from 1 through $i1 {
-        & li:nth-child(#{$i2}) {
+        & li:nth-child(#{$i2}) i {
           color: #f2a654 !important;
         }
       }
