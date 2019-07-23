@@ -18,7 +18,7 @@
 		background: linear-gradient(to right, #dd669b 0%, #553d97 100%);
 	}
 
-	.scooter & {
+	:global(.scooter) & {
 		background: linear-gradient(to right, #36d1dc 0%, #5b86e5 100%) !important;
 
 		&:hover {
