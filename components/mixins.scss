@@ -67,7 +67,7 @@
 	}
 
 	:global(.sunset) & {
-		background: linear-gradient(to right, #ff7e5f 0%, #feb47b 100%);
+		background: linear-gradient(to right, #feb47b 0%, #ff7e5f 100%);
 
 		&:hover {
 			background: linear-gradient(to left, #ff7e5f 0%, #feb47b 100%);
@@ -97,7 +97,7 @@
 		background: linear-gradient(to right, #141e30 0%, #243b55 100%);
 	}
 	:global(.sunset) & {
-		background: linear-gradient(to right, #ff7e5f 0%, #feb47b 100%);
+		background: linear-gradient(to right, #feb47b 0%, #ff7e5f 100%);
 	}
 }
 
