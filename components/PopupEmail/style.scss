@@ -120,6 +120,7 @@
 
     a {
       color: $main; text-decoration: underline;
+      @include themeText();
 
       &:hover {
         text-decoration: none;

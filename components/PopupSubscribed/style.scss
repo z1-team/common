@@ -1,13 +1,15 @@
+@import '../mixins.scss';
 @import '../variables.scss';
 
 .subscribed {
   .close {
     display: block; width: 20px; height: 20px; position: absolute; right: 5px; top: 5px;
+    @include themeClose();
 
     &:before, &:after {
       content: '';
       display: block; width: 20px; height: 4px; position: absolute; left: 50%; top: 50%;
-      background: $main; border-radius: 10px;
+      border-radius: 10px;
     }
     &:before {
       transform: translate(-50%, -50%) rotate(-45deg);
