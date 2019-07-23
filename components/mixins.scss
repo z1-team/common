@@ -237,25 +237,39 @@
 	}
 
 	:global(.scooter) & {
-		background: #36d1dc !important;
+		&:before,	&:after {
+			background: #36d1dc !important;
+		}
 	}
 	:global(.green) & {
-		background: #00cdac !important;
+		&:before,	&:after {
+			background: #00cdac !important;
+		}
 	}
 	:global(.cherry) & {
-		background: #f45c43 !important;
+		&:before,	&:after {
+			background: #f45c43 !important;
+		}
 	}
 	:global(.lush) & {
-		background: #a8e063 !important;
+		&:before,	&:after {
+			background: #a8e063 !important;
+		}
 	}
 	:global(.frost) & {
-		background: #004e92 !important;
+		&:before,	&:after {
+			background: #004e92 !important;
+		}
 	}
 	:global(.royal) & {
-		background: #243b55 !important;
+		&:before,	&:after {
+			background: #243b55 !important;
+		}
 	}
 	:global(.sunset) & {
-		background: #feb47b !important;
+		&:before,	&:after {
+			background: #feb47b !important;
+		}
 	}
 }
 
