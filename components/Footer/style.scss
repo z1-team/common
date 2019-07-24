@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 .wrFooter {
-  padding: 27px 0; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 1;
+  padding: 27px 0; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 1; height: 122px;
   background: #fafafa;
 
   :global(.night) & {

@@ -28,33 +28,4 @@
   @include respond-to(xs) {
     flex-direction: column;
   }
-
-	.contacts {
-		display: flex; align-items: center;
-
-    @include respond-to(xs) {
-      margin-bottom: 10px;
-    }
-
-		.contactsLink, .contactsText {
-			color: #fff; font-size: 12px; line-height: 14px; font-family: $m-sb;
-		}
-
-		.contactsLink {
-			&:hover {
-				text-decoration: underline;
-			}
-
-			i {
-				margin-right: 5px;
-			}
-		}
-
-		.contactsText {
-
-			i {
-				margin-right: 5px;
-			}
-		}
-	}
 }
