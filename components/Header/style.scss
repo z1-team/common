@@ -8,10 +8,14 @@
 }
 
 .wrHeader {
-  padding: 15px 0; position: fixed; width: 100%; left: 0; top: 0; z-index: 30;
+  padding: 15px 0; position: fixed; width: 100%; left: 50%; top: 0; transform: translateX(-50%); z-index: 30;
   background-size: 150%; box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
   animation: headerGradient 42s ease infinite;
   @include themeBackground();
+
+  .nightMode &, .dayMode & {
+    width: calc(100% - 200px);
+  }
 
   @include respond-to(xs) {
     padding: 10px 0;
