@@ -13,7 +13,7 @@
   animation: headerGradient 42s ease infinite;
   @include themeBackground();
 
-  :global(.nightMode) &, :global(.dayMode) & {
+  :global(.night) &, :global(.day) & {
     width: calc(100% - 200px);
   }
 

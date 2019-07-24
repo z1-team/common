@@ -4,10 +4,10 @@
   padding: 27px 0; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 1;
   background: #fafafa;
 
-  :global(.nightMode) & {
+  :global(.night) & {
     background: #161616;
   }
-  :global(.dayMode) & {
+  :global(.day) & {
     background: #f7f7f7;
   }
 }
