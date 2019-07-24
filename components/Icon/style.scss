@@ -11,6 +11,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sun:before {
+  content: "\e911";
+}
+.moon:before {
+  content: "\e913";
+}
+.chevron-right:before {
+  content: "\e914";
+}
+.arrow-right:before {
+  content: "\e915";
+}
 .check-circle:before {
   content: "\e910";
 }
