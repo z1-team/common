@@ -33,9 +33,9 @@ class ToTop extends Component{
     })
   }
 
-  render(props, {isVisible}) {
+  render({class: mixin}, {isVisible}) {
     return (
-      <a href="#" className={`${style.toTop} ${isVisible ? style.active : ''}`} onClick={this.handleToTop}>
+      <a href="#" className={`${style.toTop} ${isVisible ? style.active : ''} ${mixin ? mixin : ''}`} onClick={this.handleToTop}>
         <Icon icon="arrow-up-alt" />
       </a>
     )
