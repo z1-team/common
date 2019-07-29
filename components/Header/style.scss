@@ -15,6 +15,10 @@
 
   :global(.night) &, :global(.day) & {
     width: calc(100% - 200px);
+
+    @include respond-to(1399px) {
+  		width: calc(100% - 40px);
+  	}
   }
 
   @include respond-to(xs) {
