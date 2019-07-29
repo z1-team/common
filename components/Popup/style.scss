@@ -96,7 +96,7 @@
 
 .gallery {
 	composes: popup;
-	width: calc(100% - 30px); height: calc(100% - 30px); top: 50%; left: 15px; transform: translate(-120%, -50%);
+	width: calc(100% - 30px); top: 50%; left: 15px; transform: translate(-120%, -50%);
 
 	&.active {
 		transform: translate(0%, -50%);
