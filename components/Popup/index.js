@@ -7,9 +7,9 @@ class Popup extends Component {
     event.stopPropagation()
   }
 
-  render({isOpened, children, name}) {
+  render({isOpened, children, name, class: mixin}) {
     return (
-      <div class={isOpened ? `${style[name]} ${style.active}` : style[name]} onClick={this.handleClick}>
+      <div class={`${style[name]} ${isOpened ? style.active : ''} ${mixin}`} onClick={this.handleClick}>
         {children}
       </div>
     )
