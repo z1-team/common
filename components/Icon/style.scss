@@ -11,6 +11,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.arrow-left:before {
+  content: "\e912";
+}
 .sun:before {
   content: "\e911";
 }
