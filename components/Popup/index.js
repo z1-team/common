@@ -9,7 +9,7 @@ class Popup extends Component {
 
   render({isOpened, children, name, class: mixin}) {
     return (
-      <div class={`${style[name]} ${isOpened ? style.active : ''} ${mixin}`} onClick={this.handleClick}>
+      <div class={`${style[name]} ${isOpened ? style.active : ''} ${mixin ? mixin : ''}`} onClick={this.handleClick}>
         {children}
       </div>
     )
