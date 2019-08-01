@@ -36,6 +36,10 @@
   position: relative; width: 100%; left: 0; bottom: 0; padding: 15px;
   background: #ffffff; border: solid 1px $main;
   @include themeBorder();
+
+  :global(.night) {
+    background: #1e1e1e;
+  }
 }
 
 .brief {
@@ -90,11 +94,19 @@
   h3 {
     color: #161616; font-size: 16px; font-family: $m-sb; line-height: 20px;
     margin-bottom: 10px;
+
+    :global(.night) & {
+      color: #dadada;
+    }
   }
 
   p, a, li {
     color: #161616; font-size: 12px; font-family: $m-r; line-height: 20px;
     margin-bottom: 8px;
+
+    :global(.night) & {
+      color: #dadada;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -108,6 +120,10 @@
       content: '';
       position: absolute; left: 0; top: 9px; display: block; width: 4px; height: 4px;
       background: #161616; border-radius: 50%;
+  
+      :global(.night) & {
+        background: #dadada;
+      }
     }
   }
 
