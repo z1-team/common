@@ -263,38 +263,41 @@
 
 	:global(.scooter) & {
 		&:before,	&:after {
-			background: #36d1dc !important;
+			background: #36d1dc;
 		}
 	}
 	:global(.green) & {
 		&:before,	&:after {
-			background: #00cdac !important;
+			background: #00cdac;
 		}
 	}
 	:global(.cherry) & {
 		&:before,	&:after {
-			background: #f45c43 !important;
+			background: #f45c43;
 		}
 	}
 	:global(.lush) & {
 		&:before,	&:after {
-			background: #a8e063 !important;
+			background: #a8e063;
 		}
 	}
 	:global(.frost) & {
 		&:before,	&:after {
-			background: #004e92 !important;
+			background: #004e92;
 		}
 	}
 	:global(.royal) & {
 		&:before,	&:after {
-			background: #243b55 !important;
+			background: #243b55;
 		}
 	}
-	:global(.sunset) &, :global(.day) &, :global(.night) & {
+	:global(.sunset) & {
 		&:before,	&:after {
-			background: #feb47b !important;
+			background: #feb47b;
 		}
+	}
+	:global(.day) &, :global(.night) & {
+		background: #f69832;
 	}
 }
 
