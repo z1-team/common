@@ -8,6 +8,10 @@
   transition: opacity 0.2s ease-out;
   @include themeBorder();
 
+  :global(.night) & {
+    background: #1e1e1e;
+  }
+
   &.active {
     transform: translate(-50%, 190px);
     opacity: 1; pointer-events: auto;
@@ -17,6 +21,10 @@
   p {
     color: #161616; font-size: 14px;  font-family: $m-r; line-height: 22px; text-align: center;
     margin-bottom: 10px;
+
+    :global(.night) & {
+      background: #dadada;
+    }
   }
 
   ul {
