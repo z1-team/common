@@ -297,7 +297,9 @@
 		}
 	}
 	:global(.day) &, :global(.night) & {
-		background: #f69832;
+		&:before,	&:after {
+			background: #f69832;
+		}
 	}
 }
 
