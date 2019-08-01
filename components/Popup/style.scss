@@ -83,7 +83,7 @@
 	top: 50%; left: 0; transform: translate(-200%, -50%);
 
 	&.active {
-		left: 50%; transform: translate(-50%, -50%);
+		top: 50%; left: 50%; transform: translate(-50%, -50%);
 		pointer-events: auto;
 	}
 }
