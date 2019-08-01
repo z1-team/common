@@ -199,6 +199,9 @@
 	:global(.sunset) & {
 		color: #feb47b;
 	}
+	:global(.day) &, :global(.night) & {
+		color: #f69832;
+	}
 }
 
 @mixin themeTextHover {
@@ -248,7 +251,7 @@
 	:global(.royal) & {
 		border-color: #243b55;
 	}
-	:global(.sunset) & {
+	:global(.sunset) &, :global(.day) &, :global(.night) & {
 		border-color: #feb47b;
 	}
 }
@@ -288,7 +291,7 @@
 			background: #243b55 !important;
 		}
 	}
-	:global(.sunset) & {
+	:global(.sunset) &, :global(.day) &, :global(.night) & {
 		&:before,	&:after {
 			background: #feb47b !important;
 		}
