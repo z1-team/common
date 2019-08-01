@@ -76,14 +76,24 @@
 
 	:global(.day) &, :global(.night) & {
 		font-family: $os-b; text-transform: uppercase;
-	  padding: 9px 21px;
-	  background: #f69832; border-radius: 8px;
+	  padding: 5px 17px;
+	  background: #f69832; border: solid 2px #f69832; border-radius: 8px;
 	}
 	:global(.day) & {
 		color: #f7f7f7;
+
+		&:hover {
+			color: #f69832;
+			background: #fff;
+		}
 	}
 	:global(.night) & {
 		color: #0f0f0f;
+
+		&:hover {
+			color: #f69832;
+			background: #0f0f0f;
+		}
 	}
 }
 
