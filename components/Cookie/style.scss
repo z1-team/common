@@ -37,7 +37,7 @@
   background: #ffffff; border: solid 1px $main;
   @include themeBorder();
 
-  :global(.night) {
+  :global(.night) & {
     background: #1e1e1e;
   }
 }
@@ -53,6 +53,10 @@
 
   p, a {
     color: #161616; font-size: 14px; font-family: $m-r; line-height: 20px;
+
+    :global(.night) & {
+      color: #dadada;
+    }
   }
 
   a {
@@ -120,7 +124,7 @@
       content: '';
       position: absolute; left: 0; top: 9px; display: block; width: 4px; height: 4px;
       background: #161616; border-radius: 50%;
-  
+
       :global(.night) & {
         background: #dadada;
       }
