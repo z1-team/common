@@ -73,6 +73,18 @@
 			background: linear-gradient(to left, #ff7e5f 0%, #feb47b 100%);
 		}
 	}
+
+	:global(.day) &, :global(.night) & {
+		font-family: $os-b; text-transform: uppercase;
+	  padding: 9px 21px;
+	  background: #f69832; border-radius: 8px;
+	}
+	:global(.day) & {
+		color: #f7f7f7;
+	}
+	:global(.night) & {
+		color: #0f0f0f;
+	}
 }
 
 @mixin themeBackground {
