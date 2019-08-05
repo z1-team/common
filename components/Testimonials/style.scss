@@ -27,6 +27,10 @@
 	& > h3 {
 		color: #161616; font-size: 20px; font-family: $m-sb; line-height: 26px;
 		margin-bottom: 30px;
+
+    :global(.night) & {
+      color: #dadada;
+    }
 	}
 
 	header {
@@ -47,6 +51,10 @@
 		@include respond-to(xs) {
 			font-size: 20px;
 		}
+
+    :global(.night) & {
+      color: #dadada;
+    }
 	}
 
 	.rating {
@@ -62,6 +70,10 @@
 
 		p, span {
 			color: #484848; font-size: 12px; font-family: $os-r; line-height: 18px;
+
+      :global(.night) & {
+        color: #757575;
+      }
 		}
 
 		p {

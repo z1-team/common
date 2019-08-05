@@ -24,12 +24,21 @@
         label {
     			color: #232935; font-size: 16px; font-family: $os-b; line-height: 20px;
     			margin-bottom: 5px; display: block;
+
+					:global(.night) & {
+						color: #dadada;
+					}
     		}
 
     		input, textarea {
     			color: #161616; font-size: 14px; font-family: $os-r; line-height: 18px;
     			width: 100%; padding: 8px 10px; display: block;
     			border: solid 1px #e2e2e2; border-radius: 4px;
+
+					:global(.night) & {
+						color: #dadada;
+						background: #161616; border-color: #0f0f0f;
+					}
     		}
 
     		textarea {
@@ -39,6 +48,7 @@
     		p {
     			color: $main; font-size: 14px; font-family: $m-sb; line-height: 18px;
     			padding-top: 5px;
+					@include themeText()
     		}
 			}
 
