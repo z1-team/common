@@ -29,13 +29,13 @@ class Testimonials extends Component {
     }
   }
 
-  render({rating, title, logo, id, testimonials, isLoggedIn, onDelete, onSubmit}) {
+  render({rating, title, logo, id, testimonials, isLoggedIn, onDelete, onSubmit, class: mixin}) {
 
     const roundRating = rating ? Math.round(rating*10)/10 : 0
     const starRate = rating ? rating : 0
 
     return (
-      <div class={style.wrTestimonials}>
+      <div class={`${style.wrTestimonials} ${mixin ? mixin : ''}`}>
         <div class="container">
           <div class={style.testimonials}>
             <header>
