@@ -39,7 +39,7 @@ class Testimonials extends Component {
         <div class="container">
           <div class={style.testimonials}>
             <header>
-              <h2>Отзывы кредита “{title}”
+              <h2>Отзывы “{title}”
                 <div class={style.rating}>
                   <StarRating rating={starRate} />
                   <p>{testimonials.length} {this.getEnding()}</p>
