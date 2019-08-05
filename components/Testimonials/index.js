@@ -31,7 +31,7 @@ class Testimonials extends Component {
 
   render({rating, title, logo, id, testimonials, isLoggedIn, onDelete, onSubmit}) {
 
-    const rating = rating ? Math.round(rating*10)/10 : 0
+    const roundRating = rating ? Math.round(rating*10)/10 : 0
     const starRate = rating ? rating : 0
 
     return (
@@ -43,7 +43,7 @@ class Testimonials extends Component {
                 <div class={style.rating}>
                   <StarRating rating={starRate} />
                   <p>{testimonials.length} {this.getEnding()}</p>
-                  <span>({rating} из 5)</span>
+                  <span>({roundRating} из 5)</span>
                 </div>
               </h2>
               <figure>
