@@ -29,25 +29,25 @@ class Testimonials extends Component {
     }
   }
 
-  render({partner, testimonials, isLoggedIn, onDelete, onSubmit}) {
+  render({rating, title, logo, id, testimonials, isLoggedIn, onDelete, onSubmit}) {
 
-    const rating = partner && partner.sortBy ? Math.round(partner.sortBy.rating*10)/10 : 0
-    const starRate = partner && partner.sortBy ? partner.sortBy.rating : 0
+    const rating = rating ? Math.round(rating*10)/10 : 0
+    const starRate = rating ? rating : 0
 
     return (
       <div class={style.wrTestimonials}>
         <div class="container">
           <div class={style.testimonials}>
             <header>
-              <h2>Отзывы кредита “{partner && partner.main && partner.main.title}”
+              <h2>Отзывы кредита “{title}”
                 <div class={style.rating}>
                   <StarRating rating={starRate} />
                   <p>{testimonials.length} {this.getEnding()}</p>
-                  {partner && partner.sortBy && partner.sortBy.rating && <span>({rating} из 5)</span>}
+                  <span>({rating} из 5)</span>
                 </div>
               </h2>
               <figure>
-                <img src={partner && partner.main && partner.main.logo}/>
+                <img src={logo}/>
               </figure>
             </header>
 
@@ -67,7 +67,7 @@ class Testimonials extends Component {
                 </Masonry>
               : <h3>Загружаю отзывы...</h3>
             }
-            <LeaveTestimonial id={partner ? partner.id : null} onSubmit={onSubmit} />
+            <LeaveTestimonial id={id ? id : null} onSubmit={onSubmit} />
           </div>
         </div>
       </div>
