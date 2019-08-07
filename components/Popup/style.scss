@@ -29,15 +29,9 @@
 
 .email {
   composes: popup;
-  width: auto; position: absolute; right: 101px; bottom: 101px; left: auto; top: auto; transform: none; padding: 12px; display: none;
-  border-radius: 0; background: #feb464; box-shadow: none;
+  max-width: 600px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 12px; display: none;
+  border-radius: 0;
 
-	@include respond-to(1399px) {
-		right: 21px;
-	}
-	@include respond-to(md) {
-		right: 0;
-	}
   @include respond-to(sm) {
     height: auto;
   }
@@ -46,6 +40,18 @@
     display: block;
     pointer-events: auto;
   }
+
+	:global(.day) &, :global(.night) & {
+		max-width: none; width: auto; right: 101px; bottom: 101px; left: auto; top: auto; transform: none; padding: 10px 55px 20px 15px;
+		border-radius: 0; background: #feb464; box-shadow: none;
+
+		@include respond-to(1399px) {
+			right: 21px;
+		}
+		@include respond-to(md) {
+			right: 0;
+		}
+	}
 }
 
 .testimonial {
