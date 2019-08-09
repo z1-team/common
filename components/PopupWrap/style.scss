@@ -17,4 +17,8 @@
   transform: translateX(0);
   opacity: 1; pointer-events: auto; visibility: visible;
   transition: transform 0s 0s ease-out, visibility 0s 0s ease-out;
+
+	&:before {
+		opacity: 1;
+	}
 }

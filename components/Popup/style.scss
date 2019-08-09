@@ -23,7 +23,7 @@
   &.active {
     left: 50%; transform: translate(-50%, -50%);
     transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
-    pointer-events: auto;
+    pointer-events: auto; opacity: 1;
   }
 }
 
@@ -38,7 +38,7 @@
 
   &.active {
     display: block;
-    pointer-events: auto;
+    pointer-events: auto; opacity: 1;
 		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
   }
 
@@ -61,7 +61,7 @@
 
   &.active {
     display: block;
-    pointer-events: auto;
+    pointer-events: auto; opacity: 1;
 		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
   }
 }
@@ -78,7 +78,7 @@
   &.active {
     left: 50%; transform: translate(-50%, -50%);
 		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
-    pointer-events: auto;
+    pointer-events: auto; opacity: 1;
   }
 }
 
@@ -88,7 +88,7 @@
 
 	&.active {
 		left: 50%; transform: translate(-50%, -50%);
-		pointer-events: auto;
+		pointer-events: auto; opacity: 1;
 		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
 	}
 }
@@ -100,7 +100,7 @@
 
 	&.active {
 		top: 50%; left: 50%; transform: translate(-50%, -50%);
-		pointer-events: auto;
+		pointer-events: auto; opacity: 1;
 		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
 	}
 }
