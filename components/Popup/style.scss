@@ -41,18 +41,6 @@
     pointer-events: auto; opacity: 1;
 		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
   }
-
-	:global(.day) &, :global(.night) & {
-		max-width: none; width: auto; right: 101px; bottom: 101px; left: auto; top: auto; transform: none; padding: 10px 55px 20px 15px;
-		border-radius: 0; background: #feb464; box-shadow: none;
-
-		@include respond-to(1399px) {
-			right: 21px;
-		}
-		@include respond-to(md) {
-			right: 0;
-		}
-	}
 }
 
 .testimonial {
