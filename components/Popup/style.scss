@@ -4,8 +4,8 @@
 .popup {
 	position: absolute; width: 1140px; padding: 0 15px; z-index: 5; transform: translate(-200%, -50%); left: 0; top: 50%; z-index: 6;
 	background: #fff; border-radius: 8px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
-	transition: left 0s 0.4s ease-out, transform 0s 0.4s ease-out;
-	pointer-events: none;
+	transition: left 0s 0.4s ease-out, transform 0s 0.4s ease-out, opacity 0.4s ease-out;
+	pointer-events: none; opacity: 0;
 
 	@include respond-to(lg) {width: 980px;}
 	@include respond-to(md) {width: 760px;}
@@ -22,7 +22,7 @@
 
   &.active {
     left: 50%; transform: translate(-50%, -50%);
-    transition: left 0s 0s ease-out, transform 0s 0s ease-out;
+    transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
     pointer-events: auto;
   }
 }
@@ -39,6 +39,7 @@
   &.active {
     display: block;
     pointer-events: auto;
+		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
   }
 
 	:global(.day) &, :global(.night) & {
@@ -61,6 +62,7 @@
   &.active {
     display: block;
     pointer-events: auto;
+		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
   }
 }
 
@@ -75,7 +77,7 @@
 
   &.active {
     left: 50%; transform: translate(-50%, -50%);
-    transition: left 0s 0s ease-out, transform 0s 0s ease-out;
+		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
     pointer-events: auto;
   }
 }
@@ -84,10 +86,11 @@
 	composes: popup;
   width: 260px; height: 160px; display: flex; align-items: center; justify-content: center; top: 50%; left: 0; transform: translate(-120%, -50%);
 
-  &.active {
-     left: 50%; transform: translate(-50%, -50%);
-		 pointer-events: auto;
-  }
+	&.active {
+		left: 50%; transform: translate(-50%, -50%);
+		pointer-events: auto;
+		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
+	}
 }
 
 .gallery {
@@ -98,5 +101,6 @@
 	&.active {
 		top: 50%; left: 50%; transform: translate(-50%, -50%);
 		pointer-events: auto;
+		transition: left 0s 0s ease-out, transform 0s 0s ease-out, opacity 0.4s ease-out;
 	}
 }
