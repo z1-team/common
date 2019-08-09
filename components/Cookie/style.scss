@@ -2,9 +2,16 @@
 @import '../variables.scss';
 
 .cookie {
-  position: fixed; left: 50%; bottom: 0; transform: translate(-50%, 105%); width: 100%; max-width: 768px; z-index: 30;
+  position: fixed; left: 50%; bottom: 0; transform: translate(-50%, 105%); width: calc(100% - 200px); z-index: 30;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   opacity: 0;
+
+  @include respond-to(1399px) {
+    width: calc(100% - 40px);
+  }
+  @include respond-to(md) {
+    width: 100%;
+  }
 
   &.active {
     transform: translate(-50%, 0);
@@ -44,14 +51,14 @@
 
 .brief {
   composes: popup;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: baseline; padding: 5px 15px;
 
   .all & {
     position: absolute; transform: translateY(105%);
     opacity: 0;
   }
 
-  p, a {
+  &Text, &More {
     color: #161616; font-size: 14px; font-family: $m-r; line-height: 20px;
 
     :global(.night) & {
@@ -59,8 +66,9 @@
     }
   }
 
-  a {
+  &More {
     color: $main; font-size: 12px;
+    margin-left: 10px; display: inline-block;
     @include themeText();
 
     &:hover {
