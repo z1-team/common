@@ -11,6 +11,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.typing:before {
+  content: "\e916";
+}
 .arrow-left:before {
   content: "\e912";
 }
