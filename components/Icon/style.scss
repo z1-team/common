@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.loupe:before {
+  content: "\e917";
+}
 .typing:before {
   content: "\e916";
 }
