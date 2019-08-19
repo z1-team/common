@@ -65,7 +65,7 @@ class Testimonials extends Component {
                     />
                   ))}
                 </Masonry>
-              : <h3>Загружаю отзывы...</h3>
+              : <h3>Будьте первым кто оставит отзыв</h3>
             }
             <LeaveTestimonial id={id ? id : null} onSubmit={onSubmit} />
           </div>
