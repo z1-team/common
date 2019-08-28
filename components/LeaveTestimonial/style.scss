@@ -35,9 +35,23 @@
     			width: 100%; padding: 8px 10px; display: block;
     			border: solid 1px #e2e2e2; border-radius: 4px;
 
+					&:-webkit-autofill,
+					&:-webkit-autofill:hover,
+					&:-webkit-autofill:focus,
+					&:-webkit-autofill:active  {
+						background: #fff;
+					}
+
 					:global(.night) & {
 						color: #dadada;
 						background: #161616; border-color: #0f0f0f;
+
+						&:-webkit-autofill,
+						&:-webkit-autofill:hover,
+						&:-webkit-autofill:focus,
+						&:-webkit-autofill:active  {
+							background: #161616;
+						}
 					}
     		}
 
