@@ -71,7 +71,7 @@ class Testi extends Component {
     return(
       <div class={`${style.leaveTesti} ${mixin ? mixin : ''}`}>
         <h2>Оставьте свой отзыв</h2>
-        <form action="#" onSubmit={this.handleSubmit}>
+        <form action="#" autocomplete="off" onSubmit={this.handleSubmit}>
           <section>
             <div class={style.formInput}>
               <label>Ваше имя</label>
