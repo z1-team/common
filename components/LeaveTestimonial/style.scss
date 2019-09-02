@@ -88,7 +88,7 @@
 	transition: transform 0.42s ease, opacity 0.42s ease;
 	&Hide {
 		composes: form;
-		position: absolute; left: 0; width: 100%; transform: scale(0.4);
+		position: absolute; left: 0; top: 0; width: 100%; transform: scale(0.4);
 		opacity: 0; pointer-events: none;
 	}
 }
