@@ -2,7 +2,8 @@
 @import '../variables.scss';
 
 .leaveTesti {
-	padding: 40px 0px 0;
+	padding: 40px 0px 0; display: flex; align-items: center; justify-content: center;
+	transition: height 0.42s ease;
 
 	h2 {
 		color: #232935; font-size: 24px; font-family: $m-r; line-height: 30px;
@@ -80,5 +81,25 @@
 				width: 100%;
 			}
 		}
+	}
+}
+
+.form {
+	position: relative;
+	transition: transform 0.42s ease, opacity 0.42s ease;
+	&Hide {
+		position: absolute; left: 0; width: 100%; top: 50%; transform: translateY(-50%) scale(0.4);
+		opacity: 0; pointer-events: none;
+	}
+}
+
+.sended {
+	position: absolute; transform: scale(0.4)
+	opacity: 0; pointer-events: none;
+	
+	&Show {
+		position: relative; opacity: 1; transform: scale(1);
+		pointer-events: auto;
+		transition: transform 0.42s 0.42s ease, opacity 0.42s 0.42s ease;
 	}
 }

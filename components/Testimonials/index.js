@@ -34,8 +34,6 @@ class Testimonials extends Component {
     const roundRating = rating ? Math.round(rating*10)/10 : 0
     const starRate = rating ? rating : 0
 
-    console.log('Testimonials: ' + id)
-
     return (
       <div class={`${style.wrTestimonials} ${mixin ? mixin : ''}`}>
         <div class="container">

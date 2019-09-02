@@ -24,8 +24,7 @@ class Testi extends Component {
     super(props)
 
     this.state = {
-      ...initialState,
-      cardID: props.id
+      ...initialState
     }
   }
 
@@ -55,7 +54,7 @@ class Testi extends Component {
         onSubmit({partner: id, name, email, text, rating})
       }
 
-      this.setState(initialState)
+      this.setState({sended: true})
     } else {
       this.setState(prev => ({
         isEditing: {
@@ -69,10 +68,9 @@ class Testi extends Component {
   }
 
   render({class: mixin}, {name, email, text, rating, isEditing, sended}) {
-    console.log('Leave testimonial: ' + this.props.id)
     return(
       <div class={`${style.leaveTesti} ${mixin ? mixin : ''}`}>
-        <div class={sended ? style. sendedShow : style.sended}>
+        <div class={sended ? style.sendedShow : style.sended}>
           <p class={style.sendedText}>Ваш отзыв отправлен на модерацию. Спасибо!</p>
         </div>
         <div class={sended ? style.formHide : style.form}>

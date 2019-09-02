@@ -16,7 +16,6 @@ class Testi extends Component {
   }
 
   render({class: mixin, text, user, rating, isLoggedIn}) {
-    console.log(style)
     return(
       <div class={`${style.testi} ${mixin ? mixin : ''}`}>
         {isLoggedIn && <a href="#" class={style.delete} onClick={this.handleDelete}><Icon icon="times" /></a>}
