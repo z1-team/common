@@ -135,7 +135,6 @@
 
 	&Show {
 		composes: sended;
-		position: relative; opacity: 1; transform: scale(1);
 		pointer-events: auto;
 		animation: sendedTransform 0.42s 0.42s ease 1, sendedPosition 0.42s 0s ease 1; animation-fill-mode: forwards;
 	}
