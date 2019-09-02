@@ -38,7 +38,7 @@ class Testimonials extends Component {
       <div class={`${style.wrTestimonials} ${mixin ? mixin : ''}`}>
         <div class="container">
           <div class={style.testimonials}>
-            <header>
+            <header class={style.testimonialsHeader}>
               <h2>Отзывы “{title}”
                 <div class={style.rating}>
                   <StarRating rating={starRate} />

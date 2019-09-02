@@ -25,7 +25,7 @@ class Testi extends Component {
           <p>{text}</p>
           <Icon icon="quote-right" class={style.quoteRight} />
         </div>
-        <footer>
+        <footer class={style.testiFooter}>
           <p>{user}</p>
           <ul class={`rate-${rating}`}>
             <li><Icon icon="star" /></li>
