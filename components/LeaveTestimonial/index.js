@@ -69,7 +69,7 @@ class Testi extends Component {
   }
 
   render({class: mixin}, {name, email, text, rating, isEditing, sended}) {
-    console.log(this.state)
+    console.log('Leave testimonial: ' + this.props.id)
     return(
       <div class={`${style.leaveTesti} ${mixin ? mixin : ''}`}>
         <div class={sended ? style. sendedShow : style.sended}>
