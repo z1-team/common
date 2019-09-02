@@ -15,7 +15,8 @@ const initialState = {
     email: false,
     text: false,
     rating: false
-  }
+  },
+  sended: false
 }
 
 class Testi extends Component {
@@ -67,37 +68,43 @@ class Testi extends Component {
     }
   }
 
-  render({class: mixin}, {name, email, text, rating, isEditing}) {
+  render({class: mixin}, {name, email, text, rating, isEditing, sended}) {
+    console.log(this.state)
     return(
       <div class={`${style.leaveTesti} ${mixin ? mixin : ''}`}>
-        <h2>Оставьте свой отзыв</h2>
-        <form action="#" onSubmit={this.handleSubmit}>
-          <section>
-            <div class={style.formInput}>
-              <label>Ваше имя</label>
-              <input type="text" name="name" value={name} onChange={this.handleChange}/>
-              {isEditing.name && !name && <p class={style.error}>Пожалуйста, заполните поле.</p>}
-            </div>
-            <div class={style.formInput}>
-              <label>Ваш e-mail</label>
-              <input type="email" name="email" value={email} onChange={this.handleChange}/>
-              {isEditing.email && !email && <p class={style.error}>Пожалуйста, заполните поле.</p>}
-            </div>
-            <div class={style.formTextarea}>
-              <label>Ваш отзыв</label>
-              <textarea name="text" value={text} onChange={this.handleChange}></textarea>
-              {isEditing.text && !text && <p class={style.error}>Пожалуйста, заполните поле.</p>}
-            </div>
-            <div class={style.formInput}>
-              <label>Ваша оценка</label>
-              <LeaveRating onChange={this.handleRating} rating={rating} />
-              {isEditing.rating && rating === 0 && <p class={style.error}>Пожалуйста, поставьте свою оценку.</p>}
-            </div>
-          </section>
-          <footer>
-            <Button id="leave-testi" onClick={this.handleSubmit}>Отправить отзыв</Button>
-          </footer>
-        </form>
+        <div class={sended ? style. sendedShow : style.sended}>
+          <p class={style.sendedText}>Ваш отзыв отправлен на модерацию. Спасибо!</p>
+        </div>
+        <div class={sended ? style.formHide : style.form}>
+          <h2>Оставьте свой отзыв</h2>
+          <form action="#" onSubmit={this.handleSubmit}>
+            <section>
+              <div class={style.formInput}>
+                <label>Ваше имя</label>
+                <input type="text" name="name" value={name} onChange={this.handleChange}/>
+                {isEditing.name && !name && <p class={style.error}>Пожалуйста, заполните поле.</p>}
+              </div>
+              <div class={style.formInput}>
+                <label>Ваш e-mail</label>
+                <input type="email" name="email" value={email} onChange={this.handleChange}/>
+                {isEditing.email && !email && <p class={style.error}>Пожалуйста, заполните поле.</p>}
+              </div>
+              <div class={style.formTextarea}>
+                <label>Ваш отзыв</label>
+                <textarea name="text" value={text} onChange={this.handleChange}></textarea>
+                {isEditing.text && !text && <p class={style.error}>Пожалуйста, заполните поле.</p>}
+              </div>
+              <div class={style.formInput}>
+                <label>Ваша оценка</label>
+                <LeaveRating onChange={this.handleRating} rating={rating} />
+                {isEditing.rating && rating === 0 && <p class={style.error}>Пожалуйста, поставьте свою оценку.</p>}
+              </div>
+            </section>
+            <footer>
+              <Button id="leave-testi" onClick={this.handleSubmit}>Отправить отзыв</Button>
+            </footer>
+          </form>
+        </div>
       </div>
     )
   }
