@@ -2,7 +2,7 @@
 @import '../variables.scss';
 
 .leaveTesti {
-	padding: 40px 0px 0; display: flex; align-items: center; justify-content: center;
+	padding: 40px 0px 0; display: flex; align-items: center; justify-content: center; position: relative;
 	transition: height 0.42s ease;
 
 	h2 {
@@ -101,5 +101,11 @@
 		position: relative; opacity: 1; transform: scale(1);
 		pointer-events: auto;
 		transition: transform 0.42s 0.42s ease, opacity 0.42s 0.42s ease;
+	}
+	&Text {
+		color: #161616;
+		font-size: 20px;
+		font-family: $m-r;
+		line-height: 26px;
 	}
 }
