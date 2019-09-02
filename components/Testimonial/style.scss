@@ -30,29 +30,6 @@
 		}
 	}
 
-	div {
-		position: relative; padding: 40px 60px 35px;
-
-		@include respond-to(xs) {
-			padding: 20px 40px;
-		}
-
-		.moderate & {
-			padding: 20px 19px;
-			i {
-				display: none;
-			}
-		}
-
-		p, textarea {
-			color: #484848; font-size: 14px; font-family: $os-r; line-height: 22px;
-		}
-		textarea {
-			width: 100%; min-height: 200px;
-			resize: none;
-		}
-	}
-
 	.actions {
 		display: flex; align-items: center; justify-content: space-between; padding: 5px 19px 12px;
 		opacity: 0;
@@ -102,6 +79,29 @@
 				}
 			}
 		}
+	}
+}
+
+.body {
+	position: relative; padding: 40px 60px 35px;
+
+	@include respond-to(xs) {
+		padding: 20px 40px;
+	}
+
+	.moderate & {
+		padding: 20px 19px;
+		i {
+			display: none;
+		}
+	}
+
+	p, textarea {
+		color: #484848; font-size: 14px; font-family: $os-r; line-height: 22px;
+	}
+	textarea {
+		width: 100%; min-height: 200px;
+		resize: none;
 	}
 }
 
