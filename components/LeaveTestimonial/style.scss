@@ -124,7 +124,12 @@
 	position: relative; width: 100%; padding: 40px 0 0; left: 0; top: 0;
 	&Hide {
 		composes: form;
-		animation: formTransform 0.42s ease 1, formPosition 0.42s 0s ease 1; animation-fill-mode: forwards;
+		animation-name: formTransform, formPosition;
+		animation-duration: 0.42s, 0s;
+		animation-delay: 0s, 0.42s;
+		animation-timing-function: ease, ease;
+		animation-iteration-count: 1, 1;
+		animation-fill-mode: forwards, forwards;
 		pointer-events: none;
 	}
 }
@@ -136,7 +141,12 @@
 	&Show {
 		composes: sended;
 		pointer-events: auto;
-		animation: sendedTransform 0.42s 0.42s ease 1, sendedPosition 0.42s 0s ease 1; animation-fill-mode: forwards;
+		animation-name: sendedTransform, sendedPosition;
+		animation-duration: 0.42s, 0s;
+		animation-delay: 0.5s, 0.5s;
+		animation-timing-function: ease, ease;
+		animation-iteration-count: 1, 1;
+		animation-fill-mode: forwards, forwards;
 	}
 	&Text {
 		color: #161616;
