@@ -2,7 +2,7 @@
 @import '../variables.scss';
 
 .leaveTesti {
-	padding: 40px 0px 0; display: flex; align-items: center; justify-content: center; position: relative;
+	display: flex; align-items: center; justify-content: center; position: relative;
 
 	h2 {
 		color: #232935; font-size: 24px; font-family: $m-r; line-height: 30px;
@@ -84,7 +84,7 @@
 }
 
 .form {
-	position: relative; width: 100%;
+	position: relative; width: 100%; padding: 40px 0 0;
 	transition: transform 0.42s ease, opacity 0.42s ease;
 	&Hide {
 		composes: form;
@@ -94,7 +94,7 @@
 }
 
 .sended {
-	position: absolute; transform: scale(0.4);
+	position: absolute; transform: scale(0.4); padding: 40px 0;
 	opacity: 0; pointer-events: none;
 
 	&Show {
