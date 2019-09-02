@@ -94,9 +94,9 @@
 }
 
 .sended {
-	position: absolute; transform: scale(0.4)
+	position: absolute; transform: scale(0.4);
 	opacity: 0; pointer-events: none;
-	
+
 	&Show {
 		position: relative; opacity: 1; transform: scale(1);
 		pointer-events: auto;
