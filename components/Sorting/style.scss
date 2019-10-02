@@ -33,7 +33,12 @@
     background: transparent;
     cursor: pointer;
 
-    &.active, &:hover {
+    &:hover {
+      color: #000;
+      opacity: 0.8;
+    }
+
+    &.active {
       color: #000;
       padding-right: 15px;
       opacity: 1;
