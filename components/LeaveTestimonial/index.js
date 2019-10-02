@@ -50,8 +50,8 @@ class Testi extends Component {
     const {id, onSubmit} = this.props
 
     if(name && email && text && rating !== 0) {
+      console.log({partner: id, name, email, text, rating}, onSubmit)
       if (typeof onSubmit === 'function') {
-        console.log({partner: id, name, email, text, rating})
         onSubmit({partner: id, name, email, text, rating})
       }
 

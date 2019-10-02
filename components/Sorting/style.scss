@@ -11,7 +11,7 @@
   p, ul li button {
     color: #3b4f72; font-size: 14px; font-family: $os-r; line-height: 18px; text-transform: uppercase;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.42;
 
     @include respond-to(md) {
       font-size: 12px; text-transform: none;
@@ -33,7 +33,7 @@
     background: transparent;
     cursor: pointer;
 
-    &.active {
+    &.active, &:hover {
       color: #000;
       padding-right: 15px;
       opacity: 1;
