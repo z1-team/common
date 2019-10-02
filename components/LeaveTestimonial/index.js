@@ -51,6 +51,7 @@ class Testi extends Component {
 
     if(name && email && text && rating !== 0) {
       if (typeof onSubmit === 'function') {
+        console.log({partner: id, name, email, text, rating})
         onSubmit({partner: id, name, email, text, rating})
       }
 
