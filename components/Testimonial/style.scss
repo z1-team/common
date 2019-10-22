@@ -111,7 +111,7 @@
 	p, textarea {
 		color: #484848; font-size: 14px; font-family: $os-r; line-height: 22px;
 
-		:global & {
+		:global(.night) & {
 			color: #dadada;
 		}
 	}
