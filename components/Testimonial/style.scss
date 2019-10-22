@@ -5,6 +5,10 @@
 	width: calc(33.33333% - 20px); margin: 10px; position: relative;
 	background: #ffffff; border: solid 1px #e2e2e2;
 
+	:global(.night) & {
+		background: #161616; border-color: #0f0f0f;
+	}
+
 	@include respond-to(md) {
 		width: calc(50% - 20px);
 	}
@@ -47,12 +51,20 @@
 		display: flex; align-items: center; justify-content: space-between; padding: 15px 19px;
 		border-top: solid 1px #e2e2e2;
 
+		:global(.night) & {
+			border-color: #0f0f0f;
+		}
+
 		@include respond-to(sm) {
 			flex-direction: column;
 		}
 
 		p {
 			color: #232935; font-size: 16px; font-family: $m-sb; line-height: 22px; text-transform: uppercase;
+
+			:global(.night) & {
+				color: #dadada;
+			}
 
 			@include respond-to(sm) {
 				font-size: 14px; order: 1;
@@ -98,6 +110,10 @@
 
 	p, textarea {
 		color: #484848; font-size: 14px; font-family: $os-r; line-height: 22px;
+
+		:global & {
+			color: #dadada;
+		}
 	}
 	textarea {
 		width: 100%; min-height: 200px;
@@ -110,6 +126,10 @@
 	&Right {
 		color: #c2c2c2; font-size: 24px;
 		position: absolute;
+
+		:global(.night) & {
+			color: #484848;
+		}
 
 		@include respond-to(xs) {
 			font-size: 16px;
