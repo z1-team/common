@@ -11,6 +11,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.chat-bubble:before {
+  content: "\e917";
+}
+.mail-at:before {
+  content: "\e91c";
+}
+.user:before {
+  content: "\e91d";
+}
 .fullscreen:before {
   content: "\e91b";
 }
@@ -22,9 +31,6 @@
 }
 .next:before {
   content: "\e919";
-}
-.loupe:before {
-  content: "\e917";
 }
 .typing:before {
   content: "\e916";
