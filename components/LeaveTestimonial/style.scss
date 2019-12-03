@@ -153,5 +153,9 @@
 		font-size: 20px;
 		font-family: $m-r;
 		line-height: 26px;
+
+		:global(.night) & {
+			color: #dadada;
+		}
 	}
 }
