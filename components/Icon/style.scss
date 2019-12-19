@@ -11,6 +11,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.place:before {
+  content: "\e920";
+}
+.card:before {
+  content: "\e91f";
+}
+.cash:before {
+  content: "\e91e";
+}
 .chat-bubble:before {
   content: "\e917";
 }
