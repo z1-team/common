@@ -12,7 +12,6 @@
 			color: $main; font-size: 16px; font-family: $m-sb; line-height: 20px;
 			margin-bottom: 10px; padding: 7px 10px 3px; width: 100%;
 			background: transparent;
-			@include themeText();
 		}
 		div {
 			position: absolute; height: 12px; bottom: -4px; width: 100%;
