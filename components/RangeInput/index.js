@@ -83,9 +83,9 @@ class RangeInput extends Component {
     this.range = ref
   }
 
-  render({label}, {position, value}) {
+  render({label, class: mixin}, {position, value}) {
     return(
-      <div class={style.range}>
+      <div class={`${style.range} ${mixin ? mixin : ''}`}>
         <div>
           <input type="text" value={value === -1 ? 'Все' : value} onInput={this.handleChange}/>
           <div ref={this.saveRange}
